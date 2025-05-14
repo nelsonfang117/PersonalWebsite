@@ -1,0 +1,22 @@
+.nav-dropdown {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* stay above other content */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+}

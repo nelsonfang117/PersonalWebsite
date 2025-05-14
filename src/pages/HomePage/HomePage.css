@@ -1,0 +1,55 @@
+/* .homepage {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+} */
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  /* Remove vertical centering if present */
+  justify-content: flex-start;  /* this is default but be explicit */
+  align-items: flex-start;      /* optional */
+  min-height: 100vh;
+}
+
+/* section {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+} */
+
+/* Top row: About and Links side by side */
+.top-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Optional sizing */
+/* .about-box {
+  flex: 2;
+} */
+
+/* .about-me h2,
+.skills h2,
+.links h2,
+.projects h2 {
+  color: #0057ff;
+  margin-bottom: 0.5rem;
+}
+
+.skills ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.links a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+} */

@@ -1,0 +1,21 @@
+.top-right-button {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Adjust this distance to get it closer/farther from the edge */
+  height: 40px; /* Same height as your navbar */
+  width: 150px; /* Adjust width as needed */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-right-button:hover {
+  background-color: #0056b3;
+}
