@@ -10,7 +10,6 @@ export default function AboutBox() {
     
     return (
         <>
-            {/* <h2> My name is {nelson.name} </h2> */}
             <img
                 className="avatar"
                 src={nelson.img}

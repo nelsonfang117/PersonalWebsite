@@ -2,5 +2,6 @@
     float: left; /* We could also instead do a */
     width: 200px;
     height: auto; /* preserves aspect ratio*/
-    border-radius: 8px;
+    border-radius: 10%;
+    overflow: hidden;
 }

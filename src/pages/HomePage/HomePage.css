@@ -9,10 +9,9 @@
   flex-direction: column;
   gap: 20px;
   padding: 30px;
-  /* Remove vertical centering if present */
-  justify-content: flex-start;  /* this is default but be explicit */
-  align-items: flex-start;      /* optional */
-  min-height: 100vh;
+  width: 70%;         /* take full width */
+  max-width: 1600px;   /* optionally limit max size */
+  margin: 0 auto;      /* center it if you want */
 }
 
 /* section {
@@ -24,8 +23,17 @@
 /* Top row: About and Links side by side */
 .top-row {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap; /* makes it responsive */
 }
+
+/* .toprow .small-box {
+  margin-left: auto;
+  margin-right: auto;
+} */
 
 /* Optional sizing */
 /* .about-box {
