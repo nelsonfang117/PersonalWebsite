@@ -14,5 +14,8 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ##
 npm install use-local-storage
+
 npm install react react-dom
+
 npm install react-icons
+
