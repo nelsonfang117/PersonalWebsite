@@ -1,8 +1,8 @@
 
 export default function FavProjectsBox() {
     return (
-        <h1>
-            Favorite Projects
-        </h1>
+        <div>
+            <h3>Highlighted Projects</h3>
+        </div>
     );
 }

@@ -1,7 +1,29 @@
+.about-box-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Default desktop alignment */
+  gap: 16px;
+}
+
 .avatar {
-    float: left; /* We could also instead do a */
-    width: 200px;
-    height: auto; /* preserves aspect ratio*/
-    border-radius: 10%;
-    overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Mobile styles (centered layout) */
+/* TODO: Once content on website is done, change the max-width value to accomodate */
+@media (max-width: 1199px) {
+  .about-box-content {
+    flex-direction: column;
+    align-items: center; /* Center everything on mobile */
+    text-align: center; /* Center text alignment */
+  }
+
+  .avatar {
+    margin-right: 0; /* Remove desktop margin */
+    margin-bottom: 16px; /* Add space between image and text */
+  }
 }

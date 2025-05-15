@@ -1,63 +1,29 @@
-/* .homepage {
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-  color: #333;
-} */
-
 .homepage-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 30px;
-  width: 70%;         /* take full width */
-  max-width: 1600px;   /* optionally limit max size */
-  margin: 0 auto;      /* center it if you want */
+  width: 90%; /* More padding on mobile */
+  padding: 20px;
 }
 
-/* section {
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
-} */
-
-/* Top row: About and Links side by side */
 .top-row {
   display: flex;
-  gap: 10px;
+  gap: 18px;
   width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap; /* makes it responsive */
+  justify-content: space-between; /* Better space distribution */
+  flex-wrap: wrap;
 }
 
-/* .toprow .small-box {
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* Optional sizing */
-/* .about-box {
-  flex: 2;
-} */
-
-/* .about-me h2,
-.skills h2,
-.links h2,
-.projects h2 {
-  color: #0057ff;
-  margin-bottom: 0.5rem;
+/* Mobile layout */
+@media (max-width: 768px) {
+  .homepage-container {
+    width: 95%;
+    padding: 10px;
+  }
+  
+  .top-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .top-row > .Box {
+    width: 100% !important; /* Force full width */
+  }
 }
-
-.skills ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
-}
-
-.links a {
-  color: #007acc;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-} */

@@ -11,15 +11,19 @@ export default function HomePage() {
   return (
     <div className="homepage-container">
       <div className="top-row">
-        <Box className="medium-box">
+        <Box className="medium-box me">
           <AboutBox />
         </Box>
-        <Box className="small-box">
+        <Box className="small-box links">
           <LinksBox />
         </Box>
       </div>
-      <SkillsBox />
-      <FavProjectsBox />
+      <Box className="large-box">
+        <SkillsBox />
+      </Box>
+      <Box className="large-box">
+        <FavProjectsBox />
+      </Box>
     </div>
   );
 }

@@ -5,28 +5,60 @@
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
+/* Base box style */
+.box,
+.medium-box,
+.small-box,
+.large-box {
+  margin: 0; /* remove margin */
+  box-sizing: border-box;
+}
 
-.medium-box {
-    flex: 4;
+/* Add consistent spacing through the parent instead */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* controls spacing between ALL sections */
+  padding: 30px;
+  width: 70%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.large-box {
     border: 2px solid #aaa;
     border-radius: 5px;
     padding: 1rem;
     background-color: #f9f9f9;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
     width: 100%;
-    max-width: 1280px;
     box-sizing: border-box;
 }
 
-.small-box {
-    flex: 1;
+.medium-box {
     border: 2px solid #aaa;
     border-radius: 5px;
     padding: 1rem;
     background-color: #f9f9f9;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem; 
+    width: 100%;
+    max-width: 1280px;
+}
+
+.medium-box.me {
+    flex: 4;
+}
+
+.small-box {
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-box.links {
+    flex: 1;
+    /* max-width: 200px; */
 }
 
 .small-box,

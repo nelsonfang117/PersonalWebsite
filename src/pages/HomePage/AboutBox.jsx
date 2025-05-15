@@ -9,14 +9,17 @@ const nelson = {
 export default function AboutBox() {
     
     return (
-        <>
+        <div className="about-box-content">
             <img
                 className="avatar"
                 src={nelson.img}
                 alt={'Photo of ' + nelson.name}
             />
-            <h3>Hi there, Welcome to my website!</h3>
-            <p>Blah blah blah blah blah blah blah</p>
-        </>
+            <div>
+                <h2>Hello, Welcome to my website!</h2>
+                <p>SFU CS Student. Developer. Based in Burnaby, BC.</p>
+                <p>Hello</p>
+            </div>
+        </div>
     );
 }
