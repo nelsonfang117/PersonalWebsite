@@ -1,4 +1,5 @@
 /* Place the toggle in the top-right corner */
+/* relative unit of measurement that is based on the size of the parent font to define the size of an element on a website.  */
 .top-right-button {
   position: fixed;
   top: 1rem;
@@ -8,7 +9,7 @@
 
 /* Toggle switch styling */
 .switch {
-  position: relative;
+  position: fixed;
   display: inline-block;
   width: 52px;
   height: 28px;

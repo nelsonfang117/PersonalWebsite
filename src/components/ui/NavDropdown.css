@@ -1,7 +1,7 @@
 .nav-dropdown {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 1rem;
+  left: 1rem;
   z-index: 1000; /* stay above other content */
   background-color: white;
   padding: 10px;
@@ -11,8 +11,8 @@
 
 select {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 1rem;
+  left: 1rem;
   z-index: 1000;
   padding: 8px;
   font-size: 16px;
