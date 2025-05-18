@@ -9,12 +9,12 @@ export default function FavProjectsBox() {
         .slice(0, 3);
     
     return (
-        <div className="projects-container">
-            <div className="projects-header">
+        <div className="fav-projects-container">
+            <div className="fav-projects-header">
                 <h3>Latest Projects</h3>
                 <a href="/projects" className="view-all-link">View All Projects →</a>
             </div>
-            <div className="projects-grid">
+            <div className="fav-projects-grid">
                 {latestProjects.map(project => (
                     <ProjectCard key={project.id} project={project} />
                 ))}
@@ -31,19 +31,19 @@ function ProjectCard({ project }) {
     // });
     
     return (
-        <div className="project-card">            
+        <div className="fav-project-card">            
             {project.image && (
                 <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="project-image"
+                    className="fav-project-image"
                 />
             )}
             
-            <div className="project-content">
-                <h4 className="project-title">{project.title}</h4>
+            <div className="fav-project-content">
+                <h4 className="fav-project-title">{project.title}</h4>
                 {/* <p className="project-date">{formattedDate}</p> */}
-                <p className="project-description">{project.description}</p>
+                <p className="fav-project-description">{project.description}</p>
                 
                 <div className="technologies-container">
                     {project.technologies.map(tech => (
@@ -54,12 +54,12 @@ function ProjectCard({ project }) {
             
             {/* rel="noopener noreferrer" is for security, it prevents the new page from accessing your window obj and hides you */}
             {/* target="_blank" implies rel="noopener", but it's best practice to include it explicitly */}
-            <div className="project-links">
+            <div className="fav-project-links">
                 <a 
                     href={project.githubUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="project-link"
+                    className="fav-project-link"
                 >
                     GitHub
                 </a>
@@ -68,7 +68,7 @@ function ProjectCard({ project }) {
                         href={project.liveUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="project-link"
+                        className="fav-project-link"
                     >
                         Demo
                     </a>

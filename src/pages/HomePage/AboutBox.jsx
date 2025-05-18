@@ -17,8 +17,7 @@ export default function AboutBox() {
             />
             <div>
                 <h2>Hello, Welcome to my website!</h2>
-                <p>SFU CS Student. Developer. Based in Burnaby, BC.</p>
-                <p>Hello</p>
+                <p>SFU CS Undergraduate: 2020 - Present <br></br> Developer <br></br> Burnaby, BC.</p>
             </div>
         </div>
     );

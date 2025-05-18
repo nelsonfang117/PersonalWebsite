@@ -1,19 +1,19 @@
 /* projects.css */
 
-.projects-container {
+.fav-projects-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.projects-header {
+.fav-projects-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.projects-header h3 {
+.fav-projects-header h3 {
     font-size: 1.5rem;
     margin: 0;
 }
@@ -28,13 +28,14 @@
     text-decoration: underline;
 }
 
-.projects-grid {
+/* Our favorite projects are laid out in a grid, all projects in other file is in flexbox rows*/
+.fav-projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
-.project-card {
+.fav-project-card {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     overflow: hidden;
@@ -43,27 +44,31 @@
     flex-direction: column;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     min-height: 100%; /* Ensures equal height */
+    overflow: hidden; /* make image stay within bounds*/
 }
 
-.project-card:hover {
+.fav-project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.project-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+.fav-project-image {
+    width: 100%; /* Force full width */
+    height: 180px; /* Maintain fixed height */
+    object-fit: cover; /* Prevent distortion */
+    display: block; /* Remove any default inline spacing */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
 }
 
-.project-content {
+.fav-project-content {
     padding: 16px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-.project-title {
+.fav-project-title {
     font-size: 1.125rem;
     margin: 0 0 8px 0;
     white-space: nowrap;
@@ -71,13 +76,13 @@
     text-overflow: ellipsis;
 }
 
-.project-date {
+.fav-project-date {
     font-size: 0.75rem;
     color: #666;
     margin: 0 0 12px 0;
 }
 
-.project-description {
+.fav-project-description {
     font-size: 0.875rem;
     color: #444;
     margin: 0 0 16px 0;
@@ -113,14 +118,14 @@
     white-space: nowrap;
 }
 
-.project-links {
+.fav-project-links {
     padding: 12px 16px;
     border-top: 1px solid #e0e0e0;
     display: flex;
     gap: 16px;
 }
 
-.project-link {
+.fav-project-link {
     color: #2563eb;
     text-decoration: none;
     font-size: 0.875rem;
@@ -128,15 +133,15 @@
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    .projects-grid {
+    .fav-projects-grid {
         grid-template-columns: 1fr;
     }
     
-    .project-card {
+    .fav-project-card {
         width: 100%;
     }
     
-    .project-image {
+    .fav-project-image {
         height: 150px;
     }
 }

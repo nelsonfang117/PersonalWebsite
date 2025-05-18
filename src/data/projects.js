@@ -1,5 +1,8 @@
 // projects.js
-import leetcodeImage from '../assets/nelson.jpg'
+import leetcode_icon from '../assets/nelson.jpg'
+import eggenda_icon from '../assets/eggenda_icon.png'
+import eggenda_owlbear from '../assets/eggenda_owlbear.png'
+
 const projects = [
     {
         id: 1,
@@ -8,20 +11,21 @@ const projects = [
         technologies: ["React"],
         githubUrl: "https://github.com/nelsonfang117/PersonalWebsite",
         liveUrl: "na",
-        image: leetcodeImage,
+        image: leetcode_icon,
         date: "2025-05-17", // YYYY-MM-DD format for easy sorting
         categories: ["Web Development", "Full Stack"],
         featured: true
     },
     {
         id: 2,
-        title: "Stand-in",
-        description: "Admin dashboard for e-commerce platform",
-        technologies: ["React", "Node.js", "MongoDB", "Chart.js"],
-        githubUrl: "https://github.com/yourusername/ecommerce-dashboard",
-        image: "../assets/leetcode.png",
-        date: "2024-05-20",
-        categories: ["Something", "Here"],
+        title: "Eggenda",
+        description: "Task Management App and Game, a group project for CMPT 362",
+        technologies: ["Kotlin", "Java", "Android Studio", "Firebase"],
+        githubUrl: "https://github.com/nelsonfang117/Eggenda",
+        liveUrl: "https://eggenda-website.vercel.app/",
+        image: eggenda_owlbear,
+        date: "2024-09-01",
+        categories: ["Mobile Development", "Android"],
         featured: true
     },
     {
