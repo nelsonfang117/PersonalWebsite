@@ -1,0 +1,84 @@
+.company-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Remove gap between company and title */
+}
+
+.company-container > h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; /* Tight line spacing */
+}
+
+.company-container > p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em; /* Slightly smaller than company name */
+  color: #666; /* Optional: subtle color difference */
+  line-height: 1.2;
+}
+
+.exp-box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* .exp-row { border: 2px solid red; }
+.exp-first-line { border: 2px solid blue; } */
+.exp-row {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 0px; /* Space between elements */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%; /* Ensure full width */
+    max-width: none;
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin: 0; /* Remove any default margins */
+    overflow-x: auto; /* Allows scroll feature */
+}
+
+.exp-first-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing if wrapped */
+}
+
+.exp-first-line > h4 {
+    padding-right: 10px;
+}
+
+.exp-first-line > h4,
+.exp-first-line > .date {
+    flex-shrink: 0;
+    word-break: break-word; /* Ensures long words break */
+    overflow-wrap: break-word; /* Prevents overflow */
+    margin: 0; /* Removes default margins */
+}
+
+.date {
+    white-space: nowrap; /* Prevents date from breaking into multiple lines */
+}
+
+/* Optional: Style scrollbar (for better UX) */
+.exp-row::-webkit-scrollbar {
+    height: 6px; /* Thin scrollbar */
+}
+
+.exp-row::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.exp-row::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.exp-row::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

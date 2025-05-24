@@ -5,3 +5,13 @@
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}

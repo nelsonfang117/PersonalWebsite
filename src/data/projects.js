@@ -1,7 +1,7 @@
 // projects.js
 import leetcode_icon from '../assets/nelson.jpg'
 import eggenda_icon from '../assets/eggenda_icon.png'
-import eggenda_owlbear from '../assets/eggenda_owlbear.png'
+import eggenda_owlbear2 from '../assets/eggenda_owlbear2.png'
 
 const projects = [
     {
@@ -23,7 +23,7 @@ const projects = [
         technologies: ["Kotlin", "Java", "Android Studio", "Firebase"],
         githubUrl: "https://github.com/nelsonfang117/Eggenda",
         liveUrl: "https://eggenda-website.vercel.app/",
-        image: eggenda_owlbear,
+        image: eggenda_owlbear2,
         date: "2024-09-01",
         categories: ["Mobile Development", "Android"],
         featured: true
@@ -37,7 +37,7 @@ const projects = [
         liveUrl: "https://weatherapp.yoursite.com",
         image: "/images/weather-app.png",
         date: "2024-04-10",
-        featured: true
+        featured: false
     },
     {
         id: 4,
@@ -48,7 +48,7 @@ const projects = [
         liveUrl: "https://weatherapp.yoursite.com",
         image: "/images/weather-app.png",
         date: "2025-04-9",
-        featured: true
+        featured: false
     },
 
 ];

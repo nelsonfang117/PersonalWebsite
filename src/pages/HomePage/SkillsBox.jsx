@@ -1,3 +1,4 @@
+import './SkillsBox.css'
 
 export default function SkillsBox() {
     return (

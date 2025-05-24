@@ -1,5 +1,6 @@
 import '../HomePage/HomePage.css';
 import './ProjectsPage.css';
+import '../../components/ui/TechTag.css'
 import Box from '../../components/ui/Box.jsx';
 import projects from '../../data/projects.js';
 

@@ -1,0 +1,27 @@
+.footer-container {
+  background: var(--footer-bg); /* Use CSS variable for theming */
+  border-top: 2px solid var(--footer-border); /* Top border only */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 2rem 0;
+  margin-top: 5rem; /* Minimum space above footer */
+}
+
+.find-me-column {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 20px;
+}
+
+.find-me-column h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}

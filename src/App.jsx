@@ -6,6 +6,7 @@ import StyleButton from './components/ui/StyleButton.jsx'
 import HomePage from './pages/HomePage/HomePage.jsx'
 import ContactPage from './pages/ContactPage/ContactPage.jsx'
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage.jsx'
+import Footer from './components/ui/Footer.jsx'
 
 function App() {
   // useState is a hook allowing to track state in a function component (the App component)
@@ -26,15 +27,20 @@ function App() {
 
   return (
       <Router>
-        <NavDropdown />
-        {/* We pass the props: isDark and toggleTheme so that StyleButton can use it */}
-        {/* When props change, React will trigger a re-render of the StyleButton component */}
-        <StyleButton isDark={isDark} toggleTheme={() => setIsDark(prev => !prev)} />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
+        <div className="app-wrapper">
+          <NavDropdown />
+          {/* We pass the props: isDark and toggleTheme so that StyleButton can use it */}
+          {/* When props change, React will trigger a re-render of the StyleButton component */}
+          <StyleButton isDark={isDark} toggleTheme={() => setIsDark(prev => !prev)} />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </Router>
   )
 }

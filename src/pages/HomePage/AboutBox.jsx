@@ -7,7 +7,6 @@ const nelson = {
 }
 
 export default function AboutBox() {
-    
     return (
         <div className="about-box-content">
             <img
