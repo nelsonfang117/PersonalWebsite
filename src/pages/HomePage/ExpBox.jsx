@@ -10,8 +10,8 @@ export default function ExpBox() {
     
 
     return (
-        <div className="fav-projects-container">
-            <div className="fav-projects-header">
+        <div className="exp-container">
+            <div className="exp-container-header">
                 <h3>Experience</h3>
             </div>
             <div className="projects-list">

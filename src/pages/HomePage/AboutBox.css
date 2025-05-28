@@ -4,6 +4,14 @@
   gap: 16px;
 }
 
+.about-box-content h2 {
+  color: var(--primary-text-color);
+}
+
+.about-box-content p {
+  color: var(--secondary-text-color);
+}
+
 .avatar {
   width: 200px;
   height: 200px;

@@ -1,5 +1,5 @@
 .box {
-    border: 2px solid #ccc;
+    border: 2px solid var(--box-border-color);
     border-radius: 8px;
     padding: 1.5rem;
     background-color: var(--foreground-color);
@@ -26,7 +26,6 @@
 }
 
 .large-box {
-    border: 2px solid #aaa;
     border-radius: 5px;
     padding: 1rem;
     width: 100%;
@@ -34,7 +33,6 @@
 }
 
 .medium-box {
-    border: 2px solid #aaa;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
@@ -47,7 +45,7 @@
 }
 
 .small-box {
-    border: 2px solid #aaa;
+    background-color: var(--link-box-bg-color);
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
