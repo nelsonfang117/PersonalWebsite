@@ -43,7 +43,10 @@ function ProjectCard({ project }) {
             <div className="fav-project-content">
                 <h4 className="fav-project-title">{project.title}</h4>
                 {/* <p className="project-date">{formattedDate}</p> */}
-                <p className="fav-project-description">{project.description}</p>
+                {/* We do 'style={{ whiteSpace: 'pre-line' }}' to preserve \n in our text*/}
+                <p className="fav-project-description" style={{ whiteSpace: 'pre-line' }}>
+                    {project.description}
+                </p>
                 
                 <div className="technologies-container">
                     {project.technologies.map(tech => (

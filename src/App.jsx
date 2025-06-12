@@ -32,6 +32,7 @@ function App() {
           {/* We pass the props: isDark and toggleTheme so that StyleButton can use it */}
           {/* When props change, React will trigger a re-render of the StyleButton component */}
           <StyleButton isDark={isDark} toggleTheme={() => setIsDark(prev => !prev)} />
+          <h1> Hello </h1>
           <main className="main-content">
             <Routes>
               <Route path="/" element={<HomePage />} />

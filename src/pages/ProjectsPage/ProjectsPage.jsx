@@ -32,7 +32,7 @@ function ProjectRow({ project }) {
         <div className="project-row">
             <div className="project-content">
                 <h4 className="project-title">{project.title}</h4>
-                <p className="project-description">{project.description}</p>
+                <p className="project-description" style={{ whiteSpace: 'pre-line' }}>{project.description}</p>
                 
                 <div className="technologies-container">
                     {project.technologies.map(tech => (
