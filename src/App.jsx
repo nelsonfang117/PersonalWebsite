@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage.jsx'
 import ContactPage from './pages/ContactPage/ContactPage.jsx'
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage.jsx'
 import Footer from './components/ui/Footer.jsx'
+import Title from './components/ui/Title.jsx'
 
 function App() {
   // useState is a hook allowing to track state in a function component (the App component)
@@ -32,7 +33,7 @@ function App() {
           {/* We pass the props: isDark and toggleTheme so that StyleButton can use it */}
           {/* When props change, React will trigger a re-render of the StyleButton component */}
           <StyleButton isDark={isDark} toggleTheme={() => setIsDark(prev => !prev)} />
-          <h1> Hello </h1>
+          <Title />
           <main className="main-content">
             <Routes>
               <Route path="/" element={<HomePage />} />

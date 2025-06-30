@@ -57,6 +57,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-width: 0; /* Allows text to wrap properly in flex container */
 }
 
 .project-title {
@@ -106,6 +107,17 @@
   }
   
   .project-row {
-    padding: 15px;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 20px; /* Reduce gap between items */
+  }
+  
+  .project-image {
+    width: 100%; /* Make image full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Optional: Limit max height */
+  }
+  
+  .project-content {
+    order: -1; /* Make content appear first (optional) */
   }
 }

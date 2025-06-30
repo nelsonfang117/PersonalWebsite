@@ -62,13 +62,13 @@ function ProjectRow({ project }) {
                 </div>
             </div>
             
-            {project.image && (
+            {/* {project.image && (
                 <img 
                     src={project.image} 
                     alt={project.title} 
                     className="project-image"
                 />
-            )}
+            )} */}
         </div>
     );
 }

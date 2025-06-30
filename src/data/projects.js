@@ -31,7 +31,7 @@ const projects = [
     {
         id: 3,
         title: "BC Hydro Data Analytics",
-        description: "SFU Beedie Business Analytics Hackathon 2025.\nAnalyzed supply-chain issues in regards to unstable geopolitical factors and presented solutions to industry professionals. Performed data cleaning, visualization, and story-telling. Utilized Python scripting to manipulate data and both Excel and Tableau for presentation.",
+        description: "SFU Beedie Business Analytics Hackathon 2025.\nAnalyzed supply-chain issues in regards to unstable geopolitical factors and presented solutions to industry professionals.",
         technologies: ["Python", "Tableau", "MS Excel"],
         githubUrl: "https://github.com/nelsonfang117/BeedieAnalyticsHackathon2025Files",
         liveUrl: "",

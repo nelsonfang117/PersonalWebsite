@@ -15,7 +15,7 @@ export default function AboutBox() {
                 alt={'Photo of ' + nelson.name}
             />
             <div>
-                <h2>Hello, Welcome to my website!</h2>
+                <h2>Hello, welcome to my website!</h2>
                 <p>SFU CS Undergraduate: 2020 - Present <br></br> Developer <br></br> Burnaby, BC.</p>
             </div>
         </div>

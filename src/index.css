@@ -14,6 +14,7 @@
   --box-border-color: #aaa;
   --link-box-bg-color: #e7e7e7;
   --exp-row-border-color: #e0e0e0;
+  --webpage-name-title-color: #213547;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -39,6 +40,7 @@
   --box-border-color: #0c0c0c;
   --link-box-bg-color: #0e0e0e;
   --exp-row-border-color: #555555;
+  --webpage-name-title-color: #578BBA;
 }
 
 .black-box {
@@ -100,4 +102,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@font-face {
+  font-family: lubrifont;
+  src: url(../src/fonts/WDXLLubrifontSC-Regular.ttf);
+}
+
+.lubrifont {
+  font-family: lubrifont
 }
