@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .technology-tag {
@@ -10,5 +10,6 @@
     color: var(--tech-tag-font);
     font-size: 0.75rem;
     padding: 4px 8px;
-    border-radius: 4px;
+    font-weight: 600;
+    border-radius: 20px;
 }

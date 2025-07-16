@@ -5,8 +5,8 @@ import Box from '../../components/ui/Box.jsx';
 import projects from '../../data/projects.js';
 
 export default function ProjectsPage() {
+    // If you want to show featured projects only, you can use the .filter(project => project.featured)
     const allProjects = projects
-        .filter(project => project.featured)
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
     return (

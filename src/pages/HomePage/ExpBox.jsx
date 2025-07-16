@@ -28,12 +28,20 @@ function ExperienceRow({ experience }) {
         <div className="exp-row"> 
             <div className="exp-first-line">
                 <div className="company-container">
-                    <h4>{experience.company}</h4>
-                    <p>{experience.title}</p>
+                    <h4>{experience.title}</h4>
+                    <p>{experience.company}</p>
                 </div>
                 <p className="date">{experience.start} - {experience.end}</p>
             </div>
-            <p>{experience.description}</p>
+            {Array.isArray(experience.description) ? (
+                <ul className="exp-description-list">
+                    {experience.description.map((point, index) => (
+                        <li key={index}>{point}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p>{experience.description}</p>
+            )}
             <div className="technologies-container">
                 {experience.technologies.map(tech => (
                     <span key={tech} className="technology-tag">{tech}</span>
