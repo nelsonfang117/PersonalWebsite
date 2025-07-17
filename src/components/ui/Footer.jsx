@@ -1,6 +1,8 @@
 import './Footer.css'
 import { FaLinkedin, FaGithub, FaCode } from 'react-icons/fa'; // using react-icons for simplicity
 import leetcodeLogo from '../../assets/leetcode.png'
+import ButtonMailto from './ButtonMailto';
+
 export default function Footer() {
     return (
         <div className="footer-container">
@@ -14,7 +16,12 @@ export default function Footer() {
                         <FaGithub className="icon" />
                     </a>
                 </div>
+                <div className="email-blurb">
+                    <p>Email me: </p>
+                    <ButtonMailto label="nelsonfang117@gmail.com" mailto="mailto:nelsonfang117@gmail.com" />
+                </div>
             </div>
+
         </div>
     );
 }

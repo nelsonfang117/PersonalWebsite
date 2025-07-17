@@ -25,3 +25,17 @@
   margin: 0;
   font-size: 1.1rem;
 }
+
+.email-blurb {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* spacing between label and email */
+  font-size: 0.8rem;       /* match sizes */
+}
+
+
+.email-blurb h5,
+.email-blurb p {
+    margin: 0;
+    line-height: 1.5;      /* or 1 */
+}
