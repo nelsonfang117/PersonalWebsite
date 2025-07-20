@@ -3,15 +3,20 @@ import './FavProjectsBox.css'
 
 export default function FavProjectsBox() {
     // Get featured projects, sort by date (newest first), then take first 3
+    // const latestProjects = projects
+    //     .filter(project => project.featured)
+    //     .sort((a, b) => new Date(b.date) - new Date(a.date))
+    //     .slice(0, 3);
+    
+    // This will show all featured
     const latestProjects = projects
         .filter(project => project.featured)
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
-        .slice(0, 3);
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
     
     return (
         <div className="fav-projects-container">
             <div className="fav-projects-header">
-                <h3>Latest Projects</h3>
+                <h3>Featured Projects</h3>
                 <a href="/projects" className="view-all-link">View All Projects →</a>
             </div>
             <div className="fav-projects-grid">

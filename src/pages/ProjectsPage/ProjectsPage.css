@@ -13,15 +13,37 @@
 }
 
 .project-row {
-  display: flex;
-  gap: 30px;
-  border: 1px solid var(--exp-row-border-color);
-  border-radius: 8px;
-  padding: 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%; /* Ensure full width */
-  box-sizing: border-box; /* Include padding in width calculation */
-  margin: 0; /* Remove any default margins */
+    display: flex;
+    min-height: 300px;  /* Each project should have same height*/
+    gap: 0; /* Remove gap since we'll handle spacing differently */
+    border: 1px solid var(--exp-row-border-color);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures border-radius applies to children */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.project-image-container {
+    flex: 0 0 auto; /* Don't grow or shrink */
+    width: 300px; /* Or your preferred width */
+    display: flex;
+}
+
+.fav-project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Remove any default spacing */
+}
+
+.project-content {
+    flex: 1;
+    padding: 20px; /* Padding only for the content area */
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
 .projects-container {
@@ -51,13 +73,6 @@
 .project-row:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.project-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-width: 0; /* Allows text to wrap properly in flex container */
 }
 
 .project-title {
@@ -90,34 +105,24 @@
     text-decoration: underline;
 }
 
-.project-image {
+/* .project-image {
     width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: 4px;
-}
+} */
 
-@media (max-width: 768px) {
-  .homepage-container {
-    padding: 0 15px; /* Slightly reduce padding on mobile */
-  }
-  
-  .large-box {
-    padding: 15px;
-  }
-  
-  .project-row {
-    flex-direction: column; /* Stack vertically on mobile */
-    gap: 20px; /* Reduce gap between items */
-  }
-  
-  .project-image {
-    width: 100%; /* Make image full width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Optional: Limit max height */
-  }
-  
-  .project-content {
-    order: -1; /* Make content appear first (optional) */
-  }
+@media (max-width: 900px) {
+    .project-row {
+        flex-direction: column;
+    }
+    
+    .project-image-container {
+        width: 100%;
+        height: 200px; /* Adjust as needed */
+    }
+    
+    .fav-project-image {
+        height: 100%;
+    }
 }

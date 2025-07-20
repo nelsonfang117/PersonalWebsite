@@ -37,20 +37,8 @@ const projects = [
         liveUrl: "",
         image: beedie_hackathon_2025,
         date: "2025-05-31",
-        featured: true
-    },
-    {
-        id: 4,
-        title: "nothing app",
-        description: "wee",
-        technologies: ["coding", "API disintegration"],
-        githubUrl: "https://github.com/yourusername/weather-app",
-        liveUrl: "https://weatherapp.yoursite.com",
-        image: "/images/weather-app.png",
-        date: "2025-04-9",
         featured: false
     },
-
 ];
 
 export default projects;

@@ -30,6 +30,18 @@ export default function ProjectsPage() {
 function ProjectRow({ project }) {
     return (
         <div className="project-row">
+            {/* Image container - no padding here */}
+            {project.image && (
+                <div className="project-image-container">
+                    <img 
+                        src={project.image} 
+                        alt={project.title} 
+                        className="fav-project-image"
+                    />
+                </div>
+            )}
+            
+            {/* Content container - will have padding */}
             <div className="project-content">
                 <h4 className="project-title">{project.title}</h4>
                 <p className="project-description" style={{ whiteSpace: 'pre-line' }}>{project.description}</p>
@@ -61,14 +73,6 @@ function ProjectRow({ project }) {
                     )}
                 </div>
             </div>
-            
-            {/* {project.image && (
-                <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="project-image"
-                />
-            )} */}
         </div>
     );
 }

@@ -13,7 +13,7 @@ export default function NavDropdown() {
       <option value="" disabled>Navigate to...</option>
       <option value="/">Home</option>
       <option value="/projects">Projects</option>
-      <option value="/contact">Contact</option>
+      {/* <option value="/contact">Contact</option> */}
     </select>
   );
 }
