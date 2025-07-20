@@ -1,8 +1,8 @@
 // projects.js
 import leetcode_icon from '../assets/nelson.jpg'
 import eggenda_icon from '../assets/eggenda_icon.png'
-import eggenda_owlbear2 from '../assets/eggenda_owlbear2.png'
-import beedie_hackathon_2025 from '../assets/beedie_ba_hackathon_small.png'
+import eggenda_owlbear from '../assets/eggenda_owlbear_square.png'
+import beedie_hackathon_2025 from '../assets/beedie_ba_hackathon.png'
 const projects = [
     {
         id: 1,
@@ -23,7 +23,7 @@ const projects = [
         technologies: ["Kotlin", "Java", "Android Studio", "Firebase"],
         githubUrl: "https://github.com/nelsonfang117/Eggenda",
         liveUrl: "https://eggenda-website.vercel.app/",
-        image: eggenda_owlbear2,
+        image: eggenda_owlbear,
         date: "2024-09-01",
         categories: ["Mobile Development", "Android"],
         featured: true
@@ -37,7 +37,7 @@ const projects = [
         liveUrl: "",
         image: beedie_hackathon_2025,
         date: "2025-05-31",
-        featured: false
+        featured: true
     },
 ];
 

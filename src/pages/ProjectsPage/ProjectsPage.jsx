@@ -36,7 +36,7 @@ function ProjectRow({ project }) {
                     <img 
                         src={project.image} 
                         alt={project.title} 
-                        className="fav-project-image"
+                        className="project-image"
                     />
                 </div>
             )}

@@ -53,13 +53,12 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+
 .fav-project-image {
     width: 100%; /* Force full width */
-    height: 180px; /* Maintain fixed height */
-    object-fit: cover; /* Prevent distortion */
-    display: block; /* Remove any default inline spacing */
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
+    height: 100%; /* Maintain fixed height */
+    object-fit: contain; /* Prevent distortion */
+    object-position: center top;
 }
 
 .fav-project-content {
