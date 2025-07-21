@@ -1,6 +1,5 @@
 // projects.js
 import leetcode_icon from '../assets/nelson.jpg'
-import eggenda_icon from '../assets/eggenda_icon.png'
 import eggenda_owlbear from '../assets/eggenda_owlbear_square.png'
 import beedie_hackathon_2025 from '../assets/beedie_ba_hackathon.png'
 const projects = [

@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   line-height: 1.2; /* Tight line spacing */
+  color: var(--primary-text-color);
 }
 
 .company-container > p {
@@ -75,6 +76,7 @@
 
 .date {
     white-space: nowrap; /* Prevents date from breaking into multiple lines */
+    color: #666
 }
 
 /* Optional: Style scrollbar (for better UX) */
@@ -94,4 +96,8 @@
 
 .exp-row::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.exp-description-list {
+    color: var(--primary-text-color)
 }
