@@ -36,7 +36,6 @@ function App() {
           <Title />
           <main className="main-content">
             <Routes>
-              <Route path="/PersonalWebsite" element={<HomePage />} />
               <Route path="/" element={<HomePage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/projects" element={<ProjectsPage />} />
